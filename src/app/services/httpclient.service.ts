@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import {HttpClient, HttpEventType, HttpHeaders, HttpRequest} from "@angular/common/http";
 import {Observable} from "rxjs/Observable";
 import "rxjs/add/operator/catch";
 import "rxjs/add/observable/of";
@@ -7,6 +6,7 @@ import "rxjs/add/operator/switchMap";
 import "rxjs/add/observable/forkJoin";
 import "rxjs/add/operator/map";
 import "rxjs/add/operator/shareReplay";
+import {HttpClient, HttpEventType, HttpHeaders, HttpRequest} from "@angular/common/http";
 
 @Injectable()
 export class HttpclientService {
@@ -129,7 +129,7 @@ export class HttpclientService {
       (val) => console.log("logging GET value", val)
     );
 
-    this.courses$ = httpGet$;
+   // this.courses$ = httpGet$;
   }
 
   httpPostExample() {
