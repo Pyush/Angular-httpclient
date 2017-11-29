@@ -10,14 +10,31 @@ export class AppComponent implements OnInit{
 
   title: string;
 
-  constructor(private httpClient: HttpclientService) {
+  public onlineOffline: boolean = navigator.onLine;
 
+  constructor(private httpClient: HttpclientService) {
+    window.addEventListener('online', () => {
+      this.onlineOffline = true; console.log("true block",this.onlineOffline)
+      // PopupToast.openJamboToast('You have internet connection', this._toastrService);
+    });
+    window.addEventListener('offline', () => {
+      this.onlineOffline = false;  console.log("false block",this.onlineOffline)
+      // PopupToast.openJamboToastError('No internet connection', this._toastrService);
+    });
   }
 
   ngOnInit(): void {
+
+   /* this.httpClient.getMetaData('http://www.bonoboz.in').subscribe(
+      data => {
+        console.log(data);
+      }
+    );*/
+
+
     this.httpClient.getUserData().subscribe(
       data => {
-        console.log(JSON.stringify(data));
+       // console.log(JSON.stringify(data));
         this.title = JSON.stringify(data);
       }
     );

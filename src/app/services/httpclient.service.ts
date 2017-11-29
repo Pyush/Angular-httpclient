@@ -15,6 +15,22 @@ export class HttpclientService {
 
   constructor(private http: HttpClient) { }
 
+  /*getMetaData(url) {
+    return this.http.request('GET',url,this.getHeaders(url));
+  }*/
+
+  /*getHeaders(url) {
+    let headers = new Headers();
+    /!*headers.append("Access-Control-Allow-Headers","*");
+    headers.append('Access-Control-Allow-Credentials', true);
+    headers.append('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');*!/
+    /!*headers.append('content-type', 'text/plain');
+    headers.append('Accept', 'text/plain');
+    headers.append('Accept', 'text/html');
+    headers.append('Accept', ' application/xhtml+xml ');*!/
+    return headers;
+  }*/
+
   getUserData() {
     return this.http.get('https://api.github.com/users/seeschweiler');
   }
