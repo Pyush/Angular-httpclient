@@ -1,7 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
 
-
 body {
+  margin: 0;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+  background: floralwhite;
+  font-size: 18px;
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*body {
   font: 400 15px Lato, sans-serif;
   line-height: 1.8;
   color: #818181;
@@ -183,5 +191,5 @@ footer .glyphicon {
   display: flex;
   align-items: center;
   justify-content: space-around;
-}
+}*/
 

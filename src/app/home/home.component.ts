@@ -13,3 +13,5 @@ export class HomeComponent implements OnInit {
   }
 
 }
+
+// https://theinfogrid.com/tech/developers/angular/responsive-navbar-angular-flex-layout/

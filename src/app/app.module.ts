@@ -21,6 +21,7 @@ import {
   MatStepperModule, MatTableModule, MatTabsModule,
   MatToolbarModule, MatTooltipModule
 } from "@angular/material";
+import {FlexLayoutModule} from "@angular/flex-layout";
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import {
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    FlexLayoutModule,
     HttpClientModule,
     Routing,
     MatButtonModule,

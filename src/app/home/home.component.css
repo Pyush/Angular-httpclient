@@ -1,0 +1,41 @@
+.container {
+  margin: 0;
+  width: 100%;
+  padding: 0;
+}
+
+.item {
+  padding: 8px;
+}
+
+.item-1 {
+  background: chartreuse;
+  color: white;
+}
+
+.item-2 {
+  background: cornflowerblue;
+  color: white;
+}
+
+.item-3 {
+  background: coral;
+  color: white;
+}
+
+.item-4 {
+  background: darkcyan;
+  color: white;
+}
+
+.item-5 {
+  background: forestgreen;
+  color: white;
+}
+
+
+
+
+.spacer {
+  flex: 1 1 auto;
+}
